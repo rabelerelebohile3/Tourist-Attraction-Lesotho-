@@ -28,7 +28,7 @@ if (search) {
 
         for (let i = 0; i < places.length; i++) {
             if (places[i].textContent.toLowerCase().includes(text)) {
-                places[i].style.display = "block";
+                places[i].style.display = "";
                 count++;
             }
             else {
@@ -61,30 +61,30 @@ function showPicture() {
 
 if (pictures.length > 0) {
     showPicture();
+
+    let nextButton = document.getElementById("next");
+    let previousButton = document.getElementById("previous");
+
+    nextButton.addEventListener("click", function() {
+        currentPicture++;
+
+        if (currentPicture == pictures.length) {
+            currentPicture = 0;
+        }
+
+        showPicture();
+    });
+
+    previousButton.addEventListener("click", function() {
+        currentPicture--;
+
+        if (currentPicture < 0) {
+            currentPicture = pictures.length - 1;
+        }
+
+        showPicture();
+    });
 }
-
-let nextButton = document.getElementById("next");
-let previousButton = document.getElementById("previous");
-
-nextButton.addEventListener("click", function() {
-    currentPicture++;
-
-    if (currentPicture == pictures.length) {
-        currentPicture = 0;
-    }
-
-    showPicture();
-});
-
-previousButton.addEventListener("click", function() {
-    currentPicture--;
-
-    if (currentPicture < 0) {
-        currentPicture = pictures.length - 1;
-    }
-
-    showPicture();
-});
 
 let bookingForm = document.getElementById("bookingForm");
 
@@ -120,4 +120,4 @@ if (contactForm) {
         document.getElementById("contactMessage").textContent = "Thank you. Your message has been received.";
         contactForm.reset();
     });
-}
+}                                             

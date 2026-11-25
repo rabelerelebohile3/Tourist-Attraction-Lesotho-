@@ -12,16 +12,18 @@
             <nav class="navbar navbar-expand-lg navbar-dark bg-success">
                 <div class="container">
                     <a class="navbar-brand" href="index.html">Lesotho Tourism</a>
+
                     <button class="navbar-toggler" data-bs-target="#menu" data-bs-toggle="collapse" type="button">
                         <span class="navbar-toggler-icon"></span>
                     </button>
+
                     <div class="collapse navbar-collapse" id="menu">
                         <ul class="navbar-nav ms-auto">
                             <li class="nav-item">
                                 <a class="nav-link" href="index.html">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="about.html">About</a>
+                                <a class="nav-link active" href="about.html">About</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="destinations.html">Destinations</a>
@@ -33,28 +35,41 @@
                                 <a class="nav-link" href="contact.html">Contact</a>
                             </li>
                         </ul>
+
                         <button class="btn btn-light btn-sm ms-lg-3" id="themeButton">Dark mode</button>
                     </div>
                 </div>
             </nav>
         </header>
+
         <main>
             <section class="container mt-5">
                 <h1>About Lesotho</h1>
+
                 <div class="row mt-4">
-                    <div class="col-md-6">
+                    <div class="col-md-6 mb-3">
                         <img alt="Lesotho mountains" class="img-fluid rounded" src="mountains.jpg">
                     </div>
+
                     <div class="col-md-6">
-              <h2>The Mountain Kingdom</h2>
-              <p>Lesotho is a country in Southern Africa totally surrounded by South Africa.</p>
-                        <p>It is known for its high mountains, beautiful scenery and Basotho culture.</p>
-                        <p>The people of Lesotho are called Basotho. Sesotho and English are the official languages.</p>
+                        <article>
+                            <h2>The Mountain Kingdom</h2>
+                            <p>Lesotho is a country in Southern Africa totally surrounded by South Africa.</p>
+                            <p>It is known for its high mountains, beautiful scenery and Basotho culture.</p>
+                            <p>The people of Lesotho are called Basotho. Sesotho and English are the official languages.</p>
+                        </article>
+
+                        <aside class="bg-light p-3 rounded">
+                            <h3>Did you know?</h3>
+                            <p>Lesotho is known as the Mountain Kingdom because of its high mountains.</p>
+                        </aside>
                     </div>
                 </div>
             </section>
+
             <section class="container mt-5">
                 <h2>Some facts about Lesotho</h2>
+
                 <table class="table table-bordered">
                     <tr>
                         <th>Capital city</th>
@@ -74,30 +89,48 @@
                     </tr>
                 </table>
             </section>
+
             <section class="container mt-5 mb-5">
                 <h2>Frequently asked questions</h2>
+
                 <div class="accordion" id="questions">
                     <div class="accordion-item">
                         <h3 class="accordion-header">
-                            <button class="accordion-button" data-bs-target="#one" data-bs-toggle="collapse">What is the capital of Lesotho?</button>
+                            <button class="accordion-button" data-bs-target="#one" data-bs-toggle="collapse" type="button">
+                                What is the capital of Lesotho?
+                            </button>
                         </h3>
+
                         <div class="accordion-collapse collapse show" data-bs-parent="#questions" id="one">
-                            <div class="accordion-body">The capital city of Lesotho is Maseru.</div>
+                            <div class="accordion-body">
+                                The capital city of Lesotho is Maseru.
+                            </div>
                         </div>
                     </div>
+
                     <div class="accordion-item">
                         <h3 class="accordion-header">
-                            <button class="accordion-button collapsed" data-bs-target="#two" data-bs-toggle="collapse">What is Lesotho known for?</button>
+                            <button class="accordion-button collapsed" data-bs-target="#two" data-bs-toggle="collapse" type="button">
+                                What is Lesotho known for?
+                            </button>
                         </h3>
+
                         <div class="accordion-collapse collapse" data-bs-parent="#questions" id="two">
-                            <div class="accordion-body">Lesotho is known for its mountains, culture and natural beauty.</div>
+                            <div class="accordion-body">
+                                Lesotho is known for its mountains, culture and natural beauty.
+                            </div>
                         </div>
                     </div>
                 </div>
             </section>
         </main>
-        <footer class="bg-success text-white text-center p-3 mt-5">© 2026 Lesotho Tourism</footer>
+
+        <footer class="bg-success text-white text-center p-3 mt-5">
+            © 2026 Lesotho Tourism
+        </footer>
+
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
         <script src="script.js"></script>
     </body>
-</html>
+    </html>
+    

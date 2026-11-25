@@ -44,12 +44,12 @@ body {
 }
 
 .dark {
-    background-color: #222;
+    background-color: black;
     color: white;
 }
 
 .dark .card {
-    background-color: #333;
+    background-color: lightgray;
     color: white;
 }
 

@@ -1,6 +1,5 @@
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
     background-color: white;
     color: black;
 }
@@ -35,8 +34,9 @@ body {
 
 .gallery-picture {
     width: 100%;
-    height: 220px;
+    height: 400px;
     object-fit: cover;
+    display: none;
 }
 
 .gallery-picture:hover {
@@ -49,13 +49,32 @@ body {
 }
 
 .dark .card {
-    background-color: black;
+    background-color: dimgray;
+    color: white;
+}
+
+.dark .accordion-item {
+    background-color: dimgray;
+    color: white;
+}
+
+.dark .accordion-button {
+    background-color: dimgray;
+    color: white;
+}
+
+.dark aside {
+    background-color: dimgray !important;
+    color: white;
+}
+
+.dark .table {
     color: white;
 }
 
 .dark .form-control,
 .dark .form-select {
-    background-color: #333;
+    background-color: dimgray;
     color: white;
 }
 
@@ -70,5 +89,9 @@ body {
 
     .carousel img {
         height: 220px;
+    }
+
+    .gallery-picture {
+        height: 250px;
     }
 }

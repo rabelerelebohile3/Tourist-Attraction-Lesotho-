@@ -12,13 +12,15 @@
             <nav class="navbar navbar-expand-lg navbar-dark bg-success">
                 <div class="container">
                     <a class="navbar-brand" href="index.html">Lesotho Tourism</a>
+
                     <button class="navbar-toggler" data-bs-target="#menu" data-bs-toggle="collapse" type="button">
                         <span class="navbar-toggler-icon"></span>
                     </button>
+
                     <div class="collapse navbar-collapse" id="menu">
                         <ul class="navbar-nav ms-auto">
                             <li class="nav-item">
-                                <a class="nav-link" href="index.html">Home</a>
+                                <a class="nav-link active" href="index.html">Home</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="about.html">About</a>
@@ -33,11 +35,13 @@
                                 <a class="nav-link" href="contact.html">Contact</a>
                             </li>
                         </ul>
+
                         <button class="btn btn-light btn-sm ms-lg-3" id="themeButton">Dark mode</button>
                     </div>
                 </div>
             </nav>
         </header>
+
         <main>
             <section class="home">
                 <div class="container">
@@ -46,34 +50,48 @@
                     <a class="btn btn-warning" href="destinations.html">Explore Lesotho</a>
                 </div>
             </section>
+
             <section class="container mt-5">
                 <h2 class="text-center">Discover our country</h2>
                 <p class="text-center">Lesotho is known for its mountains, waterfalls, culture and friendly people.</p>
+
                 <div class="carousel slide mt-4" data-bs-ride="carousel" id="myCarousel">
+                    <div class="carousel-indicators">
+                        <button class="active" data-bs-slide-to="0" data-bs-target="#myCarousel" type="button"></button>
+                        <button data-bs-slide-to="1" data-bs-target="#myCarousel" type="button"></button>
+                        <button data-bs-slide-to="2" data-bs-target="#myCarousel" type="button"></button>
+                    </div>
+
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <img alt="Lesotho mountains" class="d-block w-100" src="mountains.jpg">
                         </div>
+
                         <div class="carousel-item">
                             <img alt="Lesotho scenery" class="d-block w-100" src="scenery.jpg">
                         </div>
+
                         <div class="carousel-item">
                             <img alt="Lesotho nature" class="d-block w-100" src="nature.jpg">
                         </div>
                     </div>
+
                     <button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#myCarousel" type="button">
                         <span class="carousel-control-prev-icon"></span>
                     </button>
+
                     <button class="carousel-control-next" data-bs-slide="next" data-bs-target="#myCarousel" type="button">
                         <span class="carousel-control-next-icon"></span>
                     </button>
                 </div>
             </section>
+
             <section class="container mt-5 mb-5">
                 <h2 class="text-center">Explore more</h2>
+
                 <div class="row mt-3">
                     <div class="col-md-4 mb-3">
-                        <div class="card">
+                        <div class="card h-100">
                             <img alt="Tourist place" class="card-img-top" src="maletsunyane.jpg">
                             <div class="card-body">
                                 <h3>Destinations</h3>
@@ -82,8 +100,9 @@
                             </div>
                         </div>
                     </div>
+
                     <div class="col-md-4 mb-3">
-                        <div class="card">
+                        <div class="card h-100">
                             <img alt="Lesotho culture" class="card-img-top" src="makoloane.jpg">
                             <div class="card-body">
                                 <h3>About Lesotho</h3>
@@ -92,8 +111,9 @@
                             </div>
                         </div>
                     </div>
+
                     <div class="col-md-4 mb-3">
-                        <div class="card">
+                        <div class="card h-100">
                             <img alt="Lesotho scenery" class="card-img-top" src="scenery.jpg">
                             <div class="card-body">
                                 <h3>Gallery</h3>
@@ -105,8 +125,12 @@
                 </div>
             </section>
         </main>
-        <footer class="bg-success text-white text-center p-3 mt-5">© 2026 Lesotho Tourism</footer>
+
+        <footer class="bg-success text-white text-center p-3 mt-5">
+            © 2026 Lesotho Tourism
+        </footer>
+
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
         <script src="script.js"></script>
     </body>
-</html>
+</html>                        
